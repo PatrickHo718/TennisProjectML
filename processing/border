@@ -1,0 +1,16 @@
+#!/bin/python3
+
+import cv2
+
+image = cv2.imread(r"chandler.jpg")
+
+window_name = 'Image'
+
+# Using cv2.copyMakeBorder() method
+image = cv2.copyMakeBorder(image, 100, 100, 50, 50, cv2.BORDER_REFLECT)
+
+# Displaying the image
+cv2.imshow(window_name, image)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()

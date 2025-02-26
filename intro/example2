@@ -1,0 +1,13 @@
+#!/bin/python3
+
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib
+
+matplotlib.use('TkAgg')  # Use an interactive backend
+
+img = cv2.imread("chandler.jpg")
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for correct colors
+plt.waitforbuttonpress()
+plt.close('all')
